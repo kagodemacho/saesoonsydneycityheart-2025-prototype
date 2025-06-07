@@ -1,11 +1,18 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import config from "../../next.config";
+
+const MyImage = (props:any) =>{
+  return <Image {...props} src={config.basePath + props.src}/>
+}
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
+        <MyImage
           className={styles.logo}
           src="/next.svg"
           alt="Next.js logo"
@@ -27,7 +34,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <MyImage
               className={styles.logo}
               src="/vercel.svg"
               alt="Vercel logomark"
@@ -52,7 +59,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <MyImage
             aria-hidden
             src="/file.svg"
             alt="File icon"
@@ -66,7 +73,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <MyImage
             aria-hidden
             src="/window.svg"
             alt="Window icon"
@@ -80,7 +87,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <MyImage
             aria-hidden
             src="/globe.svg"
             alt="Globe icon"
