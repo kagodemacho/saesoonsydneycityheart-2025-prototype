@@ -8,9 +8,12 @@ const MyImage = (props:any) =>{
   return <Image {...props} src={config.basePath + props.src}/>
 }
 
+console.log(config)
+
 export default function Home() {
   return (
     <div className={styles.page}>
+      basePath:{config.basePath}
       <main className={styles.main}>
         <MyImage
           className={styles.logo}
