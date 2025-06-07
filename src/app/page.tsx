@@ -4,17 +4,19 @@ import Image from "next/image";
 import styles from "./page.module.css";
 // import config from "../../next.config";
 
-const MyImage = (props:any) =>{
-  // console.log(config)
-  return <Image {...props} src={'/saesoonsydneycityheart-2025-prototype' + props.src}/>
-}
+// import React from "react";
+
+// const MyImage = (props:any) =>{
+//   // console.log(config)
+//   return <Image {...props} src={'/saesoonsydneycityheart-2025-prototype' + props.src}/>
+// }
 
 export default function Home() {
   return (
     <div className={styles.page}>
       {/* basePath:{config.basePath} */}
       <main className={styles.main}>
-        <MyImage
+        <Image
           className={styles.logo}
           src="/next.svg"
           alt="Next.js logo"
@@ -37,7 +39,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <MyImage
+            <Image
               className={styles.logo}
               src="/vercel.svg"
               alt="Vercel logomark"
@@ -62,7 +64,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <MyImage
+          <Image
             aria-hidden
             src="/file.svg"
             alt="File icon"
@@ -76,7 +78,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <MyImage
+          <Image
             aria-hidden
             src="/window.svg"
             alt="Window icon"
@@ -90,7 +92,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <MyImage
+          <Image
             aria-hidden
             src="/globe.svg"
             alt="Globe icon"
