@@ -5,10 +5,9 @@ import styles from "./page.module.css";
 import config from "../../next.config";
 
 const MyImage = (props:any) =>{
+  console.log(config)
   return <Image {...props} src={config.basePath + props.src}/>
 }
-
-console.log(config)
 
 export default function Home() {
   return (
@@ -25,6 +24,7 @@ export default function Home() {
         />
         <ol>
           <li>
+            HELLO WORLD!
             Get started by editing <code>src/app/page.tsx</code>.
           </li>
           <li>Save and see your changes instantly.</li>
