@@ -2,17 +2,17 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-import config from "../../next.config";
+// import config from "../../next.config";
 
 const MyImage = (props:any) =>{
-  console.log(config)
-  return <Image {...props} src={config.basePath + props.src}/>
+  // console.log(config)
+  return <Image {...props} src={'/saesoonsydneycityheart-2025-prototype' + props.src}/>
 }
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      basePath:{config.basePath}
+      {/* basePath:{config.basePath} */}
       <main className={styles.main}>
         <MyImage
           className={styles.logo}
