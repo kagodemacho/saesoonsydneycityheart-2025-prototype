@@ -1,20 +1,10 @@
-/* eslint-disable  @typescript-eslint/no-explicit-any */
-
-import Image from "next/image";
+import Image from "@/app/component/common/Image";
 import styles from "./page.module.css";
-// import config from "../../next.config";
 
-// import React from "react";
-
-// const MyImage = (props:any) =>{
-//   // console.log(config)
-//   return <Image {...props} src={'/saesoonsydneycityheart-2025-prototype' + props.src}/>
-// }
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      {/* basePath:{config.basePath} */}
       <main className={styles.main}>
         <Image
           className={styles.logo}
@@ -26,7 +16,6 @@ export default function Home() {
         />
         <ol>
           <li>
-            HELLO WORLD!
             Get started by editing <code>src/app/page.tsx</code>.
           </li>
           <li>Save and see your changes instantly.</li>
