@@ -5,16 +5,20 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
+
       <main className={styles.main}>
-        <Image
+        {/* <Image
           className={styles.logo}
           src="/next.svg"
           alt="Next.js logo"
           width={180}
           height={38}
           priority
-        />
-        <ol>
+        /> */}
+        <div>
+          <a className={styles.title}>Saesoon Heart</a>
+        </div>
+        {/* <ol>
           <li>
             Get started by editing <code>src/app/page.tsx</code>.
           </li>
@@ -45,7 +49,7 @@ export default function Home() {
           >
             Read our docs
           </a>
-        </div>
+        </div> */}
       </main>
       <footer className={styles.footer}>
         <a
@@ -77,7 +81,7 @@ export default function Home() {
           Examples
         </a>
         <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://saesoon.org.au/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -88,7 +92,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          Go to https://saesoon.org.au/ →
         </a>
       </footer>
     </div>
